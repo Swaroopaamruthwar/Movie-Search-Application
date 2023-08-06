@@ -1,0 +1,110 @@
+/* Your CSS styles for the application */
+.App {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+body {
+  background: #060724;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+}
+
+h1 {
+  
+  background-image: linear-gradient(to right, #ef5350, #f48fb1, #7e57c2, #2196f3, #26c6da, #43a047, #eeff41, #f9a825, #ff5722);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.input {
+  height: 20px;
+  width: 300px;
+}
+
+.search-btn {
+  height: 26px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+}
+
+.movie-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  color: white;
+}
+
+.error-message {
+  color: white;
+}
+
+.movie-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.pagination button {
+  padding: 10px 20px;
+  margin: 0 5px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+.pagination button[disabled] {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+
+
+@media screen and (max-width: 620px) {
+  header {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 400px) {
+
+  h1 {
+    font-size: 16px;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+  }
+
+
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+  }
+
+}
